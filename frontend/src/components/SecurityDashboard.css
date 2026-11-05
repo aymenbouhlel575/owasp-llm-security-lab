@@ -1,0 +1,563 @@
+.security-dashboard-pro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.sdp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.sdp-eyebrow,
+.sdp-panel-header span {
+  color: #8994ff;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 0.11em;
+}
+
+
+.sdp-header h1 {
+  margin: 6px 0;
+
+  color: #f2f5fb;
+
+  font-size: 25px;
+}
+
+
+.sdp-header p {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: #7588a6;
+
+  font-size: 11px;
+}
+
+
+.sdp-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+
+.sdp-header-actions select,
+.sdp-header-actions button {
+  min-height: 36px;
+
+  padding: 0 11px;
+
+  border: 1px solid #233752;
+  border-radius: 7px;
+
+  background: #0a182a;
+
+  color: #b8c4d6;
+
+  font-size: 9px;
+}
+
+
+.sdp-header-actions button {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  cursor: pointer;
+}
+
+
+/* ============================================================
+   MODEL PIPELINE
+   ============================================================ */
+
+.sdp-model-pipeline {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px;
+
+  border: 1px solid #1e304a;
+  border-radius: 11px;
+
+  background: #091728;
+}
+
+
+.sdp-model {
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+
+  gap: 10px;
+
+  padding: 12px;
+
+  border: 1px solid #20334e;
+  border-radius: 8px;
+
+  background: #0c1b2f;
+
+  color: #8995ff;
+}
+
+
+.sdp-model > div {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  gap: 3px;
+}
+
+
+.sdp-model span {
+  color: #61738f;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+
+.sdp-model strong {
+  overflow: hidden;
+
+  color: #e1e8f2;
+
+  font-family: monospace;
+  font-size: 10px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.sdp-model.attacker {
+  border-color:
+    rgba(145, 104, 255, 0.28);
+}
+
+
+.sdp-model.target {
+  border-color:
+    rgba(70, 148, 255, 0.28);
+}
+
+
+.sdp-model.judge {
+  border-color:
+    rgba(41, 218, 166, 0.28);
+}
+
+
+.sdp-arrow {
+  color: #586a85;
+}
+
+
+/* ============================================================
+   KPIs
+   ============================================================ */
+
+.sdp-kpis {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      6,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap: 10px;
+}
+
+
+.sdp-kpi {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    1fr;
+
+  grid-template-rows:
+    auto
+    auto
+    auto;
+
+  column-gap: 9px;
+
+  padding: 14px;
+
+  border: 1px solid #20334e;
+  border-radius: 10px;
+
+  background: #0b192c;
+}
+
+
+.sdp-kpi svg {
+  grid-row:
+    1 / 4;
+
+  color: #8190ff;
+}
+
+
+.sdp-kpi span {
+  color: #687b98;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+
+.sdp-kpi strong {
+  margin-top: 4px;
+
+  color: #edf2f9;
+
+  font-size: 22px;
+}
+
+
+.sdp-kpi small {
+  margin-top: 2px;
+
+  color: #647590;
+
+  font-size: 8px;
+}
+
+
+.sdp-kpi.success strong,
+.sdp-kpi.success svg {
+  color: #2bdba8;
+}
+
+
+.sdp-kpi.warning strong,
+.sdp-kpi.warning svg {
+  color: #ffbd61;
+}
+
+
+.sdp-kpi.danger strong,
+.sdp-kpi.danger svg {
+  color: #ff627e;
+}
+
+
+/* ============================================================
+   PANELS
+   ============================================================ */
+
+.sdp-panel {
+  padding: 17px;
+
+  border: 1px solid #1e314b;
+  border-radius: 11px;
+
+  background: #0a182a;
+}
+
+
+.sdp-panel-header h2 {
+  margin: 5px 0 14px;
+
+  color: #eaf0f7;
+
+  font-size: 15px;
+}
+
+
+.sdp-comparison {
+  display: grid;
+
+  grid-template-columns:
+    1.6fr
+    1fr;
+
+  gap: 14px;
+}
+
+
+.sdp-chart {
+  min-height: 250px;
+}
+
+
+.sdp-comparison-metrics {
+  display: grid;
+
+  gap: 8px;
+}
+
+
+.sdp-comparison-metrics > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding: 13px;
+
+  border: 1px solid #20334e;
+  border-radius: 8px;
+
+  background: #081526;
+}
+
+
+.sdp-comparison-metrics span {
+  color: #677a97;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+
+.sdp-comparison-metrics strong {
+  color: #e5ebf4;
+
+  font-size: 22px;
+}
+
+
+.sdp-comparison-metrics small {
+  color: #60718c;
+
+  font-size: 8px;
+}
+
+
+.sdp-comparison-metrics .guardrail {
+  border-color:
+    rgba(42, 216, 165, 0.28);
+
+  background:
+    rgba(42, 216, 165, 0.05);
+}
+
+
+.sdp-comparison-metrics .guardrail strong {
+  color: #31d9a9;
+}
+
+
+/* ============================================================
+   RECENT ACTIVITY
+   ============================================================ */
+
+.sdp-recent-list {
+  overflow: hidden;
+
+  border: 1px solid #1d304a;
+  border-radius: 8px;
+}
+
+
+.sdp-result-row {
+  display: grid;
+
+  grid-template-columns:
+    70px
+    1.5fr
+    100px
+    1fr
+    110px;
+
+  align-items: center;
+
+  width: 100%;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  border: 0;
+  border-bottom: 1px solid #172944;
+
+  background: #081526;
+
+  color: #71839f;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.sdp-result-row:hover {
+  background: #0d1c30;
+}
+
+
+.sdp-result-row:last-child {
+  border-bottom: 0;
+}
+
+
+.sdp-result-code {
+  color: #8995ff;
+
+  font-family: monospace;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+
+.sdp-result-name {
+  color: #d8e0ec;
+
+  font-size: 9px;
+}
+
+
+.sdp-result-model {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.sdp-verdict {
+  justify-self: end;
+
+  padding: 4px 7px;
+
+  border-radius: 5px;
+
+  font-family: monospace;
+  font-size: 8px;
+}
+
+
+.sdp-verdict.blocked {
+  background:
+    rgba(40, 217, 164, 0.1);
+
+  color: #30d9a8;
+}
+
+
+.sdp-verdict.partial {
+  background:
+    rgba(255, 188, 92, 0.1);
+
+  color: #ffbd61;
+}
+
+
+.sdp-verdict.compromised {
+  background:
+    rgba(255, 92, 122, 0.1);
+
+  color: #ff617d;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1300px) {
+
+  .sdp-kpis {
+    grid-template-columns:
+      repeat(
+        3,
+        1fr
+      );
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .sdp-header {
+    flex-direction: column;
+  }
+
+
+  .sdp-model-pipeline {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .sdp-arrow {
+    text-align: center;
+
+    transform:
+      rotate(90deg);
+  }
+
+
+  .sdp-comparison {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .sdp-result-row {
+    grid-template-columns:
+      60px
+      1fr
+      100px;
+  }
+
+
+  .sdp-result-row
+  > :nth-child(3),
+  .sdp-result-row
+  > :nth-child(4) {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .sdp-kpis {
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+
+  .sdp-header-actions {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+}
