@@ -1,3 +1,11 @@
+<div align="center">
+
+<img src="assets/images/owasp-llm-security-cover.png"
+     alt="OWASP LLM Security Lab — AI Security Testing Platform"
+     width="100%">
+
+</div>
+
 # AI Security Testing Platform
 
 ### OWASP Top 10 for LLM Applications (2025)
